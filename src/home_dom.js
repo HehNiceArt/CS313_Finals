@@ -13,110 +13,100 @@ window.onload = function () {
   Greeting()
   Footer()
   Welcome()
-  Watermark();
+  Watermark()
 
-  const windowHeight = 900;
-  CreateRaindrops(30, windowHeight);
+  const windowHeight = 900
+  CreateRaindrops(30, windowHeight)
 }
 function Header () {
-  var header = document.getElementById('header')
-  var instruction = document.getElementById('inst')
-  if (instruction) {
-    instruction.style.fontSize = '0.8rem'
-    instruction.style.margin = '1rem'
-    instruction.style.display = 'inline'
-  }
-  if (header) {
-    header.style.width = '1080px'
-    header.style.marginLeft = 'auto'
-    header.style.marginRight = 'auto'
-    header.style.marginBottom = '0px'
-    header.style.margingTop = '0px'
-    header.style.paddingTop = '5px'
-    header.style.paddingBottom = '5px'
-    header.style.display = 'block'
-    header.style.height = '50px'
-  }
-  var headMenu = document.getElementById('head_menu')
-  headMenu.style.height = '50px'
-  headMenu.style.marginTop = '20px'
+  $('#inst').css({ fontSize: '0.8rem', margin: '1rem', display: 'inline' })
+  $('#header').css({
+    width: '1080px',
+    'margin-left': 'auto',
+    'margin-right': 'auto',
+    'margin-bottom': '0px',
+    'margin-top': '0px',
+    'padding-top': '5px',
+    'padding-bottom': '5px',
+    display: 'block',
+    height: '50px'
+  })
+  $('#head_menu').css({ height: '50px', 'margin-top': '20px' })
 }
 
 function HeaderSNS () {
-  var top = document.getElementById('top')
-  top.style.height = '100px'
-  top.style.backgroundImage = 'linear-gradient(#011722, transparent)'
-  var sns = document.getElementById('sns')
-  sns.style.marginTop = '0px'
-  sns.style.float = 'right'
-  sns.style.width = 'auto'
-  sns.style.height = 'auto'
-
-  var snsList = document.getElementById('snsList')
-  if (snsList) {
-    snsList.style.display = 'flex'
-    snsList.style.textAlign = 'center'
-    snsList.style.padding = '0px'
-    snsList.style.listStyle = 'none'
-    snsList.style.marginTop = '0px'
-    snsList.style.marginBottom = '0px'
-  }
+  $('#top').css({
+    height: '100px',
+    'background-image': 'linear-gradient(#011722, transparent)'
+  })
+  $('#sns').css({
+    'margin-top': '0px',
+    float: 'right',
+    width: 'auto',
+    height: 'auto'
+  })
+  $('#snsList').css({
+    display: 'flex',
+    'text-align': 'center',
+    padding: '0px',
+    'list-style': 'none',
+    'margin-top': '0px',
+    'margin-bottom': '0px'
+  })
 }
 function SnsImage () {
-  var snsImage = document.getElementById('snsImage')
-  var snsImage1 = document.getElementById('snsImage1')
-  var snsImage2 = document.getElementById('snsImage2')
-  if (
-    (snsImage && snsImage.style) ||
-    (snsImage1 && snsImage1.style) ||
-    (snsImage2 && snsImag2.style)
-  ) {
-    snsImage.style.height = '15px'
-    snsImage1.style.height = '15px'
-    snsImage1.style.marginLeft = '10px'
-    snsImage2.style.height = '15px'
-    snsImage2.style.marginLeft = '10px'
-  }
+  $('#snsImage').css({
+    height: '15px'
+  })
+  $('#snsImage1').css({
+    height: '15px',
+    'margin-left': '10px'
+  })
+  $('#snsImage2').css({
+    height: '15px',
+    'margin-left': '10px'
+  })
 }
 
 function HouseImage () {
-  var homeContainer = document.getElementById('home')
-  homeContainer.style.position = 'relative'
-
-  var homeMain = document.getElementById('home_main')
-  homeMain.style.height = '800px'
-  homeMain.style.position = 'static'
-  homeMain.style.marginLeft = 'auto'
-  homeMain.style.marginRight = 'auto'
-  homeMain.style.zIndex = '1'
-
-  var homeAnim = document.getElementById('home_anim')
-  homeAnim.style.height = '350.4px'
-  homeAnim.style.marginTop = '15.5px'
-  homeAnim.style.marginLeft = '244px'
-  homeAnim.style.position = 'absolute'
-  homeAnim.style.zIndex = '2'
-
-  var homeIllust = document.getElementById('home_illust')
-  homeIllust.style.height = '415px'
-  homeIllust.style.marginTop = '303.9px'
-  homeIllust.style.marginLeft = '11px'
-  homeIllust.style.position = 'absolute'
-  homeIllust.style.zIndex = '2'
-
-  var homeContact = document.getElementById('home_cont')
-  homeContact.style.height = '302.5px'
-  homeContact.style.marginTop = '406.2px'
-  homeContact.style.marginLeft = '667.21px'
-  homeContact.style.position = 'absolute'
-  homeContact.style.zIndex = '2'
-
-  var homeHome = document.getElementById('home_home')
-  homeHome.style.height = '428px'
-  homeHome.style.marginTop = '362.4px'
-  homeHome.style.marginLeft = '200.7px'
-  homeHome.style.position = 'absolute'
-  homeHome.style.zIndex = '2'
+  $('#home').css({
+    position: 'relative'
+  })
+  $('#home_main').css({
+    height: '800px',
+    position: 'static',
+    'margin-left': 'auto',
+    'margin-right': 'auto',
+    zIndex: '1'
+  })
+  $('#home_anim').css({
+    height: '350.4px',
+    marginTop: '15.5px',
+    marginLeft: '244px',
+    position: 'absolute',
+    zIndex: '2'
+  })
+  $('#home_illust').css({
+    height: '415px',
+    marginTop: '303.9px',
+    marginLeft: '11px',
+    position: 'absolute',
+    zIndex: '2'
+  })
+  $('#home_cont').css({
+    height: '302.5px',
+    marginTop: '406.2px',
+    marginLeft: '667.21px',
+    position: 'absolute',
+    zIndex: '2'
+  })
+  $('#home_home').css({
+    height: '428px',
+    marginTop: '362.4px',
+    marginLeft: '200.7px',
+    position: 'absolute',
+    zIndex: '2'
+  })
 }
 function HideShowImage () {
   $(document).ready(function () {
@@ -195,118 +185,109 @@ function Greeting () {
   greeting.style.border = '0px'
 }
 function Welcome () {
-  var welcome = document.getElementById('welcome')
-  var welcome_p = document.getElementById('welcome_p')
-  var welcome_text = document.getElementById('welcome_text')
-  var welcome_fullfilment = document.getElementById('welcome_fullfilment')
-  welcome_p.style.color = 'black'
-  welcome_p.style.fontSize = '20px'
-  welcome_text.style.paddingTop = '10px'
-  welcome_text.style.color = 'black'
-  welcome_text.style.fontSize = '18px'
-  welcome_text.style.textAlign = 'left'
-  welcome_fullfilment.style.color = 'black'
-  welcome_fullfilment.style.textAlign = 'left'
-  welcome_fullfilment.style.fontStyle = 'italic'
-  welcome.style.marginLeft = 'auto'
-  welcome.style.marginRight = 'auto'
-  welcome.style.width = '500px'
-  welcome.style.textAlign = 'center'
+  $('#welcome').css({
+    'margin-left': 'auto',
+    'margin-right': 'auto',
+    width: '500px',
+    textAlign: 'left'
+  })
+  $('#welcome_p').css({
+    color: 'black',
+    fontSize: '20px'
+  })
+  $('#welcome_text').css({
+    'padding-top': '10px',
+    color: 'black',
+    fontSize: '18px',
+    textAlign: 'left'
+  })
+  $('#welcome_fullfilment').css({
+    color: 'black',
+    'text-align': 'left',
+    fontstyle: 'italic'
+  })
+  $('#Signature_black').css({
+    height: '100px',
+    position: 'absolute',
+    'margin-left': '600px',
+    'margin-bottom': '0px'
+  })
+  $('#Signature_black2').css({
+    height: '100px',
+    position: 'absolute',
+    'margin-left': '-250px'
+  })
 }
 function Footer () {
-  var footer = document.getElementById('footer')
   var footerList = document.getElementById('footerlist')
-  var footerP1 = document.getElementById('footer_p1')
-  var footerP2 = document.getElementById('footer_p2')
-  var footerP3 = document.getElementById('footer_p3')
-  var footerP4 = document.getElementById('footer_p4')
-  var border1 = document.getElementById('border1')
-  var border2 = document.getElementById('border2')
-  var border3 = document.getElementById('border3')
-  var hrefHome = document.getElementById('hrefHome')
-  var hrefIllust = document.getElementById('hrefillust')
-  var hrefAnim = document.getElementById('hrefanim')
-  var hrefCont = document.getElementById('hrefcont')
-
-  border1.style.borderLeft = '1px solid #C9BBB0'
-  border2.style.borderLeft = '1px solid #C9BBB0'
-  border3.style.borderLeft = '1px solid #C9BBB0'
-  footer.style.margin = '0px'
-  footer.style.textAlign = 'center'
-  footer.style.height = '150px'
-  footer.style.padding = '0px'
-
-  footerP1.style.paddingLeft = '10px'
-  footerP1.style.paddingRight = '10px'
-  footerP1.style.margin = '0px'
-  footerP2.style.paddingLeft = '10px'
-  footerP2.style.paddingRight = '10px'
-  footerP2.style.margin = '0px'
-  footerP3.style.paddingLeft = '10px'
-  footerP3.style.paddingRight = '10px'
-  footerP3.style.margin = '0px'
-  footerP4.style.paddingLeft = '10px'
-  footerP4.style.paddingRight = '10px'
-  footerP4.style.margin = '0px'
-
-  hrefHome.style.color = '#C9BBB0'; 
-  hrefIllust.style.color = '#C9BBB0';
-  hrefAnim.style.color = '#C9BBB0';
-  hrefCont.style.color = '#C9BBB0';
-  hrefHome.style.textDecoration = 'none'
-  hrefIllust.style.textDecoration = 'none';
-  hrefAnim.style.textDecoration = 'none';
-  hrefCont.style.textDecoration = 'none';
-
-  footerList.style.display = 'inline-flex'
-  footerList.style.textAlign = 'center'
-  footerList.style.fontWeight = 'bold'
-  footerList.style.marginLeft = 'auto'
-  footerList.style.marginRight = 'auto'
-  footerList.style.marginTop = '30px'
-  footerList.style.padding = '10px'
-  footerList.style.height = '18px'
-  footerlist.style.listStyle = 'none'
+  $('#border1, #border2, #border3').css({ 'border-left': '1px solid #C9BBB0' })
+  $('#footer').css({
+    margin: '0px',
+    'text-align': 'center',
+    height: '150px',
+    padding: '0px'
+  })
+  $('#footer_p1, #footer_p2, #footer_p3, #footer_p4').css({
+    'padding-left': '10px',
+    'padding-right': '10px',
+    margin: '0px'
+  })
+  $('#hrefHome, #hrefillust, #hrefanim, #hrefcont').css({
+    color: '#C9BBB0',
+    'text-decoration': 'none'
+  })
+  $('#footerlist').css({
+    display: 'inline-flex',
+    textAlign: 'center',
+    'font-weight': 'bold',
+    'margin-left': 'auto',
+    'margin-right': 'auto',
+    'margin-top': '30px',
+    padding: '10px',
+    height: '18px',
+    listStyle: 'none'
+  })
 }
 
-function Watermark(){
-  var watermark = document.getElementById('watermark')
-  watermark.style.marginTop = '40px';
-  watermark.style.fontSize = '12px';
+function Watermark () {
+  $("#watermark").css({
+    'margin-top': '40px',
+    'font-size': '12px'
+  })
 }
 
-function createRaindrop(maxHeight) {
-  const raindrop = document.createElement('div');
-  raindrop.className = 'raindrop';
-  raindrop.style.width = '1.5px';
-  raindrop.style.height = `${Math.random() * 20 + 10}px`;
-  raindrop.style.backgroundColor = '#828282';
-  raindrop.style.position = 'absolute';
-  const leftPosition = Math.random() * (window.innerWidth - 2);
-  raindrop.style.left = `${leftPosition}px`;
-  document.body.appendChild(raindrop);
+function createRaindrop (maxHeight) {
+  const raindrop = document.createElement('div')
+  raindrop.className = 'raindrop'
+  raindrop.style.width = '1.5px'
+  raindrop.style.height = `${Math.random() * 20 + 10}px`
+  raindrop.style.backgroundColor = '#828282'
+  raindrop.style.position = 'absolute'
+  const leftPosition = Math.random() * (window.innerWidth - 2)
+  raindrop.style.left = `${leftPosition}px`
+  document.body.appendChild(raindrop)
 
-  document.getElementById('rain').style.zIndex = '3';
-  let position = 0;
+  document.getElementById('rain').style.zIndex = '3'
+  let position = 0
   const fallSpeed = 10
 
-  function fall() {
-    position += fallSpeed;
-    raindrop.style.top = position + 'px';
+  function fall () {
+    position += fallSpeed
+    raindrop.style.top = position + 'px'
 
     if (position < maxHeight) {
-      requestAnimationFrame(fall);
+      requestAnimationFrame(fall)
     } else {
-      raindrop.remove();
-      setTimeout(() => createRaindrop(maxHeight), Math.random() * 3000); 
+      raindrop.remove()
+      setTimeout(() => createRaindrop(maxHeight), Math.random() * 3000)
     }
   }
 
-  fall();
+  fall()
 }
 
-function CreateRaindrops(numRaindrops, maxHeight) {
+function CreateRaindrops (numRaindrops, maxHeight) {
   for (let i = 0; i < numRaindrops; i++) {
-    setTimeout(() => createRaindrop(maxHeight), Math.random() * 3000);
+    setTimeout(() => createRaindrop(maxHeight), Math.random() * 3000)
   }
 }
