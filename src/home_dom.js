@@ -288,7 +288,7 @@ function createRaindrop(maxHeight) {
 
   document.getElementById('rain').style.zIndex = '3';
   let position = 0;
-  const fallSpeed = 10;
+  const fallSpeed = 10
 
   function fall() {
     position += fallSpeed;
