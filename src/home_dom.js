@@ -129,7 +129,7 @@ function HideShowImage () {
     $('.home_animation').mouseenter(function () {
       homeAnim.style.opacity = '1'
       $('.home_animation').on('click', function () {
-        window.location.href = 'animation.html'
+        window.location.href = './src/animation.html'
       })
     })
     $('.home_animation').mouseleave(function () {
@@ -143,7 +143,7 @@ function HideShowImage () {
     $('.home_illustration').mouseenter(function () {
       homeIllust.style.opacity = '1'
       $('.home_illustration').on('click', function () {
-        window.location.href = 'illustration.html'
+        window.location.href = './src/illustration.html'
       })
     })
     $('.home_illustration').mouseleave(function () {
@@ -157,7 +157,7 @@ function HideShowImage () {
     $('.home_contact').mouseenter(function () {
       homeContact.style.opacity = '1'
       $('.home_contact').on('click', function () {
-        window.location.href = 'contact.html'
+        window.location.href = './src/contact.html'
       })
     })
     $('.home_contact').mouseleave(function () {
@@ -171,7 +171,7 @@ function HideShowImage () {
     $('.home_home_light').mouseenter(function () {
       homeHome.style.opacity = '1'
       $('.home_home_light').on('click', function () {
-        window.location.href = 'Home.html'
+        window.location.href = 'index.html'
       })
     })
     $('.home_home_light').mouseleave(function () {

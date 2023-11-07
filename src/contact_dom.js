@@ -20,6 +20,8 @@ function AllCalls(){
   HomeThumbnail();
   ContentContainer();
   Content();
+  Footer();
+  Watermark();
 }
 function Header () {
   $('#header').css({
@@ -99,23 +101,96 @@ function HomeThumbnail(){
     'height': '600px'
   })
 }
-function ContentCntainer(){
-  $("#contentContainer").css({
-    'width': 'auto',
+function ContentContainer () {
+  $('#contentContainer').css({
+    width: 'auto',
+    height: 'auto',
+    padding: '30px',
     'margin-left': 'auto',
     'margin-right': 'auto',
-    'height': '900px',
     'margin-top': '30px',
-    'padding': '30px',
     'text-align': 'center',
-    'color': 'black'
+    'background-color': '#C9BBB0'
   })
-  
-  
+  $('#content').css({
+    width: '1000px',
+    height: '500px',
+    'margin-bottom': 'auto',
+    'margin-left': 'auto',
+    'margin-right': 'auto'
+  })
 }
 function Content(){
-  $("#contentP").css({
-    'font-size': '10px'
+  $("#content").css({
+    color: 'black'
+  })
+  $("#container").css({
+    width: '510px',
+    'margin-left': 'auto',
+    'margin-right': 'auto'
+  })
+  $(".formFormat").css({
+    'text-align': 'left',
+    width: 'auto',
+    'margin-top': '10px',
+    'margin-bottom': '0px'
+  })
+  $("#fname, #lname").css({
+    width: '500px'
+  })
+  $("#container").css({
+    'text-align': 'left',
+    'border-radius': '5px',
+    'background-color': '#b4a499',
+    'padding': '20px'
+  })
+  $("#subject").css({
+    height: '200px',
+    resize: 'none',
+    width: '500px',
+    'border-radius': '5px'
+  })
+}
+function Footer () {
+  $('#border1, #border2, #border3').css({ 'border-left': '1px solid #C9BBB0' })
+  $('#footer').css({
+    'background-color': '#070d17',
+    margin: '0px',
+    'text-align': 'center',
+    height: '150px',
+    padding: '0px'
+  })
+  $('#footer_p1, #footer_p2, #footer_p3, #footer_p4').css({
+    'padding-left': '10px',
+    'padding-right': '10px',
+    margin: '0px'
+  })
+  $('#hrefHome, #hrefillust, #hrefanim, #hrefcont').css({
+    color: '#C9BBB0',
+    'text-decoration': 'none'
+  })
+  $('#footerlist').css({
+    display: 'inline-flex',
+    textAlign: 'center',
+    'font-weight': 'bold',
+    'margin-left': 'auto',
+    'margin-right': 'auto',
+    'margin-top': '30px',
+    padding: '10px',
+    height: '18px',
+    listStyle: 'none'
+  })
+}
+
+function Watermark () {
+  $("#watermark").css({
+    'margin-top': '0px',
+    'font-size': '12px',
+    color: 'white'
+  })
+  $("#watermarkP").css({
+    'text-align': 'center',
+    color: '#C9BBB0'
   })
 }
 function createRaindrop(maxHeight) {

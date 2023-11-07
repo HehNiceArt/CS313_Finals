@@ -19,6 +19,10 @@ function AllCalls(){
   HeaderList();
   HomeThumbnail();
   Content();
+  ContentContainer();
+  Footer();
+  Watermark();
+  Flip();
 }
 function Header () {
   $('#header').css({
@@ -98,10 +102,173 @@ function HomeThumbnail(){
     'height': '600px'
   })
 }
-function Content(){
-  $("#contentContainer").css({
-    'background-color': '#C9BBB0',
-    height: '1000px'
+function ContentContainer () {
+  $('#contentContainer').css({
+    width: 'auto',
+    height: 'auto',
+    padding: '30px',
+    'margin-left': 'auto',
+    'margin-right': 'auto',
+    'margin-top': '30px',
+    'text-align': 'center',
+    'background-color': '#C9BBB0'
+  })
+  $('#content').css({
+    width: '1000px',
+    height: '500px',
+    'margin-bottom': 'auto',
+    'margin-left': 'auto',
+    'margin-right': 'auto'
+  })
+}
+function Content () {
+  $('#contentP').css({
+    color: 'black',
+    'font-size': '18px',
+    'margin-top': '25px'
+  })
+  $('hr').css({
+    width: '100%'
+  })
+  $("p").css({
+    'text-align': 'left',
+    color: 'black'
+  })
+  $('#AnimP').css({
+    'text-align': 'left',
+    //color: 'black'
+  })
+  $('.row').css({
+    padding: '8px 8px',
+    width: 'auto',
+    height: 'auto',
+    'padding-bottom': '8px'
+  })
+  $('.column').css({
+    float: 'left',
+    'padding-left': '40px',
+    'padding-right': '40px',
+    'padding-bottom': '40px',
+    width: '155px'
+  })
+  $('.modal').css({
+    display: 'none',
+    position: 'fixed',
+    'z-index': 1,
+    'padding-top': '100px',
+    left: '0',
+    top: '0',
+    height: '100%',
+    width: '100%',
+    overflow: 'auto',
+    'background-color': 'black',
+  })
+  $(".closecursor").css({
+    'color': 'white',
+    'position': 'absolute',
+    'top': '10px',
+    'right': '25px',
+    'font-size': '35px',
+    'font-weight': 'bold'
+  })
+  $(".closecursor").mouseenter(function(){
+  $(this).css({
+    'color': '#999',
+    'text-decoration': 'none',
+    'cursor': 'pointer'
+  })
+  })
+  $(".closecursor").mouseleave(function(){
+    $(this).css({
+      'color': 'white',
+      'position': 'absolute',
+      'top': '10px',
+      'right': '25px',
+      'font-size': '35px',
+      'font-weight': 'bold'
+    })
+  })
+}
+function Flip () {
+  $(document).ready(function () {
+    $('#AnimPanel').slideUp('fast');
+    $('#AnimP').click(function () {
+      if ($('#AnimPanel').is(':visible')) {
+        $('#AnimPanel').slideUp('slow')
+      } else {
+        $('#AnimPanel').slideDown('slow')
+      }
+    })
+  })
+}
+function openModal () {
+  document.getElementById('myModal').style.display = 'block'
+}
+function CloseModal () {
+  document.getElementById('myModal').style.display = 'none'
+}
+function currentSlide (n) {
+  showSlides((slideIndex = n))
+}
+function showSlides (n) {
+  var i
+  var slides = document.getElementsByClassName('mySlides')
+  var dots = document.getElementsByClassName('demo')
+  var captionText = document.getElementById('caption')
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none'
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(' active', '')
+  }
+  slides[slideIndex - 1].style.display = 'block'
+}
+function Footer () {
+  $('#border1, #border2, #border3').css({ 'border-left': '1px solid #C9BBB0' })
+  $('#footer').css({
+    'background-color': '#070d17',
+    margin: '0px',
+    'text-align': 'center',
+    height: '150px',
+    padding: '0px'
+  })
+  $('#footer_p1, #footer_p2, #footer_p3, #footer_p4').css({
+    'padding-left': '10px',
+    'padding-right': '10px',
+    margin: '0px'
+  })
+  $('#hrefHome, #hrefillust, #hrefanim, #hrefcont').css({
+    color: '#C9BBB0',
+    'text-decoration': 'none'
+  })
+  $('#footerlist').css({
+    display: 'inline-flex',
+    textAlign: 'center',
+    'font-weight': 'bold',
+    'margin-left': 'auto',
+    'margin-right': 'auto',
+    'margin-top': '30px',
+    padding: '10px',
+    height: '18px',
+    listStyle: 'none'
+  })
+}
+
+function Watermark () {
+  $("#watermark").css({
+    'margin-top': '0px',
+    'font-size': '12px',
+    color: 'white'
+  })
+  $("#watermarkP").css({
+    'text-align': 'center',
+    color: '#C9BBB0'
   })
 }
 function createRaindrop(maxHeight) {

@@ -20,7 +20,7 @@
         <div id="head_menu">
           <ul id="headerlist">
             <li>
-              <p id="header_p1"><a href="Home.html" id="hrefHome">Home</a></p>
+              <p id="header_p1"><a href="\index.html" id="hrefHome">Home</a></p>
             </li>
             <li id="border1">
               <p id="header_p2">
@@ -76,7 +76,93 @@
         >
     </div>
     <div id="contentContainer">
-
+        <div id="content">
+          <span id="contentP">This is a compilation of my animation works</span>
+        <hr>
+        <p id="AnimP">2023 ~ 2021 ↓</p>
+        <div id="AnimPanel">
+          <div class="row">
+            <div class="column">
+              <img
+                class="hover-shadow"
+                src="\portfolio/animation/Animation_Bibi_preview.png"
+                onclick="openModal(); currentSlide(1)"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="hover-shadow"
+                src="\portfolio/animation/Animation_Nemu_preview.png"
+                onclick="openModal(); currentSlide(2)"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="hover-shadow"
+                src="\portfolio/animation/Animation_Shiro_preview.png"
+                onclick="openModal(); currentSlide(3)"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="hover-shadow"
+                src="\portfolio/animation/Animation_Towa_preview.png"
+                onclick="openModal(); currentSlide(4)"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="hover-shadow"
+                src="\portfolio/animation/Animation_Floa_preview.png"
+                onclick="openModal(); currentSlide(5)"
+              />
+            </div>
+          </div>
+        </div>
+        
+        </div>
     </div>
+    <div id="footer">
+          <ul id="footerlist">
+            <li>
+              <p id="footer_p1"><a href="\index.html" id="hrefHome">Home</a></p>
+            </li>
+            <li id="border1">
+              <p id="footer_p2">
+                <a href="illustration.html" id="hrefillust">Illustration</a>
+              </p>
+            </li>
+            <li id="border2">
+              <p id="footer_p3">
+                <a href="animation.html" id="hrefanim">Animation</a>
+              </p>
+            </li>
+            <li id="border3">
+              <p id="footer_p4"><a href="contact.html" id="hrefcont">Contact</a></p>
+            </li>
+          </ul>
+          <div id="watermark">
+            <p id="watermarkP">©2023 Philippines Heh Nice</p>
+          </div>
+    </div>
+    <div id="myModal" class="modal" style="display: none;">
+        <span class="closecursor" onclick="CloseModal()">&times;</span>
+        <div class="modal-content">
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/animation/Bibi 3.gif" style="width: 70%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/animation/Animation_Nemu_Bday.gif" style="width: 40%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/animation/Final Render.gif" style="width: 60%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/animation/Towa Smirk Edit.gif" style="width: 70%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/animation/Floa.gif" style="width: 23%;">
+        </div>
+    
   </body>
 </html>
