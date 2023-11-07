@@ -208,8 +208,9 @@ function Welcome () {
   welcome_fullfilment.style.color = 'black'
   welcome_fullfilment.style.textAlign = 'left'
   welcome_fullfilment.style.fontStyle = 'italic'
-  welcome.style.marginLeft = '700px'
-  welcome.style.marginRight = '700px'
+  welcome.style.marginLeft = 'auto'
+  welcome.style.marginRight = 'auto'
+  welcome.style.width = '500px'
   welcome.style.textAlign = 'center'
 }
 function Footer () {
