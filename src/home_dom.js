@@ -1,10 +1,20 @@
 window.onload = function () {
   var parent = document.getElementById('Body')
-  parent.style.fontFamily = 'Tahoma,sans-serif'
-  parent.style.textAlign = 'center'
-  parent.style.color = '#C9BBB0'
-  parent.style.backgroundColor = '#070d17'
-  parent.style.margin = '0px'
+  $("#Body").css({
+    'font-family': 'Open Sans,sans-serif',
+    'text-align': 'center',
+    'color': '#C9BBB0',
+    'background-color': '#070d17',
+    'margin': '0px'
+  })
+  
+  
+  AllCalls();
+  const windowHeight = 900
+  CreateRaindrops(30, windowHeight)
+}
+
+function AllCalls(){
   Header()
   HeaderSNS()
   SnsImage()
@@ -14,9 +24,6 @@ window.onload = function () {
   Footer()
   Welcome()
   Watermark()
-
-  const windowHeight = 900
-  CreateRaindrops(30, windowHeight)
 }
 function Header () {
   $('#inst').css({ fontSize: '0.8rem', margin: '1rem', display: 'inline' })
@@ -219,7 +226,6 @@ function Welcome () {
   })
 }
 function Footer () {
-  var footerList = document.getElementById('footerlist')
   $('#border1, #border2, #border3').css({ 'border-left': '1px solid #C9BBB0' })
   $('#footer').css({
     margin: '0px',
@@ -269,7 +275,7 @@ function createRaindrop (maxHeight) {
 
   document.getElementById('rain').style.zIndex = '3'
   let position = 0
-  const fallSpeed = 10
+  const fallSpeed = Math.random() * 15 + 5;
 
   function fall () {
     position += fallSpeed

@@ -1,13 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <script src="illustration_dom.js"></script>
     <title>Illustration</title>
-</head>
-<body id="Body">
-     <div id="rain"></div>
-</body>
+  </head>
+  <body id="Body">
+    <div id="rain"></div>
+    <div id="top">
+      <div id="header">
+        <div id="head_menu">
+          <ul id="headerlist">
+            <li>
+              <p id="header_p1"><a href="Home.html" id="hrefHome">Home</a></p>
+            </li>
+            <li id="border1">
+              <p id="header_p2">
+                <a href="illustration.html" id="hrefillust">Illustration</a>
+              </p>
+            </li>
+            <li id="border2">
+              <p id="header_p3">
+                <a href="animation.html" id="hrefanim">Animation</a>
+              </p>
+            </li>
+            <li id="border3">
+              <p id="header_p4">
+                <a href="contact.html" id="hrefcont">Contact</a>
+              </p>
+            </li>
+          </ul>
+          <div id="sns">
+            <ul id="snsList">
+              <li>
+                <a href="https://twitter.com/HehNiceArt" target="new">
+                  <img src="\Images/twitter.png" id="snsImage" alt="Twitter" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.artstation.com/hehniceart" target="new">
+                  <img
+                    src="\Images/artstation.png"
+                    id="snsImage1"
+                    alt="artstation"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@HehNiceArt/featured"
+                  target="new"
+                >
+                  <img src="\Images/youtube.png" id="snsImage2" alt="youtube" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="home">
+      <img
+        src="\Images/Main_illust_thumbnail_light.png"
+        id="home_thumb"
+        alt="Main Animation Thumbnail Light"
+        class="home_thumbnail"
+      />
+    </div>
+    <div id="contentContainer">
+      <div id="content">
+        <span id="contentP">This is a compilation of my works</span>
+        <hr>
+        <p id="2023P">2023 ↓</p>
+        <div id="2023Panel">
+          <div class="row">
+            <div class="column">
+              <img
+                class="hover-shadow"
+                src="\portfolio/2023/YumiIllust_preview.png"
+                onclick="openModal(); currentSlide(1)"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="hover-shadow"
+                src="\portfolio/2023/NanamiMaiko_preview.png"
+                onclick="openModal(); currentSlide(2)"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="hover-shadow"
+                src="\portfolio/2023/Animation_Nemu_Bday_preview.gif"
+                onclick="openModal(); currentSlide(3)"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="hover-shadow"
+                src="\portfolio/2023/ShinShua_preview.png"
+                onclick="openModal(); currentSlide(4)"
+              />
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p id="2022P">2022 ↓</p>
+        <div id="2022Panel">
+            <div class="row">
+                <div class="column">
+                  <img
+                    class="hover-shadow"
+                    src="\portfolio/2022/Anguish_preview.png"
+                    onclick="openModal(); currentSlide(5)"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="hover-shadow"
+                    src="\portfolio/2022/Crepe_preview.png"
+                    onclick="openModal(); currentSlide(6)"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="hover-shadow"
+                    src="\portfolio/2022/Glow_preview.png"
+                    onclick="openModal(); currentSlide(7)"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="hover-shadow"
+                    src="\portfolio/2022/Kairos.jpg"
+                    onclick="openModal(); currentSlide(8)"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="hover-shadow"
+                    src="\portfolio/2022/Kohana Yumi_preview.png"
+                    onclick="openModal(); currentSlide(9)"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="hover-shadow"
+                    src="\portfolio/2022/Rayda Revolt_preview.png"
+                    onclick="openModal(); currentSlide(10)"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="hover-shadow"
+                    src="\portfolio/2022/Reyda Revolt 100 Followers_preview.jpg"
+                    onclick="openModal(); currentSlide(11)"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="hover-shadow"
+                    src="\portfolio/2022/SIU Render_preview.png"
+                    onclick="openModal(); currentSlide(12)"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="hover-shadow"
+                    src="\portfolio/2022/Ulrich von Hutten_preview.png"
+                    onclick="openModal(); currentSlide(13)"
+                  />
+                </div>
+              </div>
+        </div>
+        <hr>
+        <p id="2021P">2021 ↓</p>
+        <div id="2021Panel">
+            <div class="row">
+                <div class="column">
+                  <img
+                    class="hover-shadow"
+                    src="\portfolio/2021/Commission_preview.png"
+                    onclick="openModal(); currentSlide(14)"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="hover-shadow"
+                    src="\portfolio/2021/Floa Christmas 2021_preview.png"
+                    onclick="openModal(); currentSlide(15)"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="hover-shadow"
+                    src="\portfolio/2021/Haruse Supi New Outfit_preview.png"
+                    onclick="openModal(); currentSlide(16)"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="hover-shadow"
+                    src="\portfolio/2021/Kaoru Tobiume_preview.png"
+                    onclick="openModal(); currentSlide(17)"
+                  />
+                </div>
+                <div class="column">
+                    <img
+                      class="hover-shadow"
+                      src="\portfolio/2021/Mashiro Nemu ASMR 2_preview.png"
+                      onclick="openModal(); currentSlide(18)"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="hover-shadow"
+                      src="\portfolio/2021/Mashiro Nemu Bday 1_preview.png"
+                      onclick="openModal(); currentSlide(19)"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="hover-shadow"
+                      src="\portfolio/2021/Nekoma Remu_preview.png"
+                      onclick="openModal(); currentSlide(20)"
+                    />
+                  </div>
+                  <div class="column">
+                    <img
+                      class="hover-shadow"
+                      src="\portfolio/2021/Rika Ironeko_preview.png"
+                      onclick="openModal(); currentSlide(21)"
+                    />
+                  </div>
+                  <hr style="opacity: 0;">
+                  <div class="column">
+                    <img
+                      class="hover-shadow"
+                      src="\portfolio/2021/Tsubaki Samura_preview.png"
+                      onclick="openModal(); currentSlide(22)"
+                    />
+                  </div>
+                   <div class="column">
+                    <img
+                      class="hover-shadow"
+                      src="\portfolio/2021/ShironoTen with wings_preview.png"
+                      onclick="openModal(); currentSlide(23)"
+                    />
+                  </div>
+            </div>
+        </div>
+      </div>
+    </div>
+      <div id="footer">
+        <ul id="footerlist">
+          <li>
+            <p id="footer_p1"><a href="Home.html" id="hrefHome">Home</a></p>
+          </li>
+          <li id="border1">
+            <p id="footer_p2">
+              <a href="illustration.html" id="hrefillust">Illustration</a>
+            </p>
+          </li>
+          <li id="border2">
+            <p id="footer_p3">
+              <a href="animation.html" id="hrefanim">Animation</a>
+            </p>
+          </li>
+          <li id="border3">
+            <p id="footer_p4"><a href="contact.html" id="hrefcont">Contact</a></p>
+          </li>
+        </ul>
+        <div id="watermark">
+          <p id="watermarkP">©2023 Philippines Heh Nice</p>
+        </div>
+      </div>
+      <div id="myModal" class="modal" style="display: none;">
+        <span class="closecursor" onclick="CloseModal()">&times;</span>
+        <div class="modal-content">
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2023/YumiIllust.png" style="width: 30%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2023/NanamiMaiko.png" style="width: 40%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2023/Animation_Nemu_Bday.gif" style="width: 40%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2023/ShinShua.png" style="width: 50%;">
+        </div>
+
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2022/Anguish.png" style="width: 60%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2022/Crepe.png" style="width: 30%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2022/Glow.png" style="width: 60%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2022/KairosArrowmancer.jpg" style="width: 30%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2022/Kohana Yumi.png" style="width: 60%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2022/Rayda Revolt.png" style="width: 50%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2022/Reyda Revolt 100 Followers.jpg" style="width: 40%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2022/SIU Render.png" style="width: 30%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2022/Ulrich von Hutten.png" style="width: 25%;">
+        </div>
+
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2021/Commission.png" style="width: 25%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2021/Floa Christmas 2021.png" style="width: 23%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2021/Haruse Supi New Outfit.png" style="width: 27%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2021/Kaoru Tobiume.png" style="width: 30%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2021/Mashiro Nemu ASMR 2.png" style="width: 50%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2021/Mashiro Nemu Bday 1.png" style="width: 30%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2021/Nekoma Remu gif.gif" style="width: 40%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2021/Rika Ironeko.png" style="width: 40%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2021/Tsubaki Samura.png" style="width: 30%;">
+        </div>
+        <div class="mySlides" style="display: block;">
+            <img src="\portfolio/2021/ShironoTen with wings.png" style="width: 50%;">
+        </div>
+    
+  </body>
 </html>
