@@ -1,6 +1,6 @@
 window.onload = function(){
     var parent = document.getElementById('Body')
-  parent.style.fontFamily = 'sans-serif'
+  parent.style.fontFamily = 'Tahoma,sans-serif'
   parent.style.textAlign = 'center'
   parent.style.color = '#C9BBB0'
   parent.style.backgroundColor = '#070d17'
